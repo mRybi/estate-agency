@@ -1,13 +1,47 @@
-import { Label } from 'office-ui-fabric-react/lib/Label'
 import * as React from 'react';
-
+import { House } from '../../components/house/house';
+import { Grid, Col } from '../../components/Grid';
+import Row from '../../components/Grid/Row';
 export class Houses extends React.Component {
 
   public render() {
+ 
     return (
-        <div>
-            <Label>Houses</Label>
-        </div>
+      <Grid>
+        <Col>
+          <Row>
+            <House/>
+          </Row>
+          <Row>
+            <House/>
+          </Row>
+        </Col>
+        
+        <Col>
+          <Row>
+            <House/>
+          </Row>
+          <Row>
+            <House/>
+          </Row>
+        </Col>
+        <Col>
+          <Row>
+            <House/>
+          </Row>
+          <Row>
+            <House/>
+          </Row>
+        </Col>
+        <Col>
+          <Row>
+            <House/>
+          </Row>
+          <Row>
+            <House/>
+          </Row>
+        </Col>
+      </Grid>
     );
   }
 }

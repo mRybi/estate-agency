@@ -1,0 +1,37 @@
+@import '~styles/_variables.scss';
+@import '~styles/_mixins.scss';
+
+.home-screen {
+    padding: 20px;
+
+    #superheader {
+        padding: 0px 0px 20px 0px;
+    }
+
+    .icon-btn {
+        margin: 0 4px 4px 0;
+        width: 88px;
+        height: 88px;
+         background-color: lighten($background-color, 40%);
+        @include transition();
+        &:hover {
+         background-color: lighten($color-accent, 50%);
+        }
+        .ms-Button-flexContainer {
+          @include flexbox;
+          flex-flow: column wrap;
+          .ms-Button-icon,
+          .ms-Button-textContainer {
+            flex: 1 0 auto;
+            height: auto;
+            line-height: 1;
+            font-size: 12px;
+          }
+          .ms-Button-icon {
+            margin-top: 10px;
+            font-size: 32px;
+            color: lighten($color-primary, 20%);
+          }
+        }
+      }
+}

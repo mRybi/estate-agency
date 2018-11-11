@@ -1,3 +1,4 @@
 import App404 from './app404'
+import App404Header from './app404Header'
 
-export default App404
+export { App404Header,  App404}

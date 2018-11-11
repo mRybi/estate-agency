@@ -1,0 +1,85 @@
+a {
+  text-decoration: none;
+  color: $color-primary;
+  @include transition;
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+p {
+  margin: 0.5em 0;
+  word-wrap: break-word;
+
+  &.center-align {
+    display: flex;
+    align-items: center;
+    span {
+      margin-left: 10px;
+    }
+  }
+}
+
+.small-header {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $header-color;
+}
+
+h5.small-header {
+  font-size: 13px;
+}
+
+.hasError {
+  color: #a80000;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+.hasSuccess {
+  color: #107c10;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+.hasWarning {
+  color: #ffb900;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+.link {
+  position: relative;
+  color: rgb(0, 120, 212);
+  cursor: pointer;
+  display: inline;
+  font-size: inherit;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  text-align: left;
+  text-overflow: inherit;
+  user-select: text;
+  outline: transparent;
+  background: none;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  overflow: inherit;
+}
+
+h2.heading {
+  border-bottom: 1px solid #a6a6a6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+  padding: 10px;
+}

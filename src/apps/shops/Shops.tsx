@@ -7,6 +7,8 @@ export class Shops extends React.Component {
     return (
         <div>
             <Label>Shops</Label>
+            <Label>Shops info</Label>
+            <Label>Licytacja</Label>
         </div>
     );
   }

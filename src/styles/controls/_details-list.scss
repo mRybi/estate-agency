@@ -1,0 +1,6 @@
+.ms-DetailsList .ms-DetailsRow {
+  .ms-DetailsRow-cell, .ms-DetailsRow-fields {
+    @include flexbox;
+    @include align-items(center);
+  }
+}

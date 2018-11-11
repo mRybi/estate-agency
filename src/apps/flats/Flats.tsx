@@ -3,10 +3,14 @@ import * as React from 'react';
 
 export class Flats extends React.Component {
 
+  aaa =10;
+
   public render() {
     return (
         <div>
-            <Label>Flats</Label>
+            <Label>{this.aaa}</Label>
+            <Label>Flat info</Label>
+            <Label>Licytacja</Label>
         </div>
     );
   }

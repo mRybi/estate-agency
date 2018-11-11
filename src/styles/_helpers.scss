@@ -1,0 +1,83 @@
+.inline {
+  display: flex;
+  justify-content: space-between;
+  &.left {
+    justify-content: flex-start;
+  }
+}
+
+.pull-right {
+  margin-left: auto;
+}
+
+.nopadding {
+  padding: 0 !important;
+}
+
+.d-inline {
+  display: inline-block;
+}
+
+.scrollArea {
+  overflow: auto; 
+}
+
+.h100p {
+  height: 100%;
+  max-height: 100%;
+}
+
+.w100p {
+  width: 100%;
+}
+
+.ms-Button.clear-btn.active {
+  background-color: #deecf9;
+}
+
+.ms-Persona-presenceIcon .mi-CheckMark {
+  margin-top: .25em;
+  &:before {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
+
+@include respond-to-max(sm) {
+  .ms-Panel:not(.userPanel):not(.sidebar) {
+    .ms-Panel-content, .header {
+      padding: 0 8px;
+    }
+    .ms-Panel-header {
+      padding: 0 12px;
+    }
+    .ms-Dropdown-optionText {
+      white-space: pre-line;
+    }
+  }
+}
+
+@for $i from 0 through 40 {
+  $opacity: (1 - ($i / 35)) / 2;
+  @if $opacity >= .45 {
+    $opacity: $opacity * 2;
+  }
+
+  span[class*='distance-#{$i}'],
+  div[class*='distance-#{$i}'] {
+    opacity: $opacity;
+    .ms-Label,
+    .ms-TextField-field,
+    .ms-TextField-fieldGroup,
+    .ms-ComboBox,
+    .ms-Dropdown {
+      border-color: rgba(100, 100, 100, $opacity);
+      color: #000;
+      opacity: $opacity;
+    }
+  }
+}
+
+.ms-Pivot-link-content.no-match {
+  opacity: .5;
+}

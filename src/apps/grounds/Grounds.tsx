@@ -7,6 +7,8 @@ export class Grounds extends React.Component {
     return (
         <div>
             <Label>Grounds</Label>
+            <Label>Grounds info</Label>
+            <Label>Licytacja</Label>
         </div>
     );
   }

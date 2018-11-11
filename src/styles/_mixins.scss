@@ -1,0 +1,227 @@
+@mixin respond-to($breakpoint) {
+  @if $breakpoint== 'sm' {
+    @media (min-width: 320px) and (max-width: 479px) {
+      @content;
+    }
+  } @else if $breakpoint== 'md' {
+    @media (min-width: 480px) and (max-width: 639px) {
+      @content;
+    }
+  } @else if $breakpoint== 'lg' {
+    @media (min-width: 640px) and (max-width: 1023px) {
+      @content;
+    }
+  } @else if $breakpoint == 'xl' {
+    @media (min-width: 1024px) and (max-width: 1365px) {
+      @content;
+    }
+  } @else if $breakpoint == 'xxl' {
+    @media (min-width: 1366px) and (max-width: 1919px) {
+      @content;
+    }
+  } @else if $breakpoint == 'xxxl' {
+    @media (min-width: 1920px) {
+      @content;
+    }
+  }
+}
+
+@mixin respond-to-min($breakpoint) {
+  @if $breakpoint== 'sm' {
+    @media (min-width: 320px) {
+      @content;
+    }
+  } @else if $breakpoint== 'md' {
+    @media (min-width: 480px) {
+      @content;
+    }
+  } @else if $breakpoint== 'lg' {
+    @media (min-width: 640px) {
+      @content;
+    }
+  } @else if $breakpoint == 'xl' {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  } @else if $breakpoint == 'xxl' {
+    @media (min-width: 1366px) {
+      @content;
+    }
+  } @else if $breakpoint == 'xxxl' {
+    @media (min-width: 1920px) {
+      @content;
+    }
+  }
+}
+
+@mixin respond-to-max($breakpoint) {
+  @if $breakpoint== 'xs' {
+    @media (max-width: 320px) {
+      @content;
+    }
+  } @else if $breakpoint== 'sm' {
+    @media (max-width: 479px) {
+      @content;
+    }
+  } @else if $breakpoint== 'md' {
+    @media (max-width: 639px) {
+      @content;
+    }
+  } @else if $breakpoint== 'lg' {
+    @media (max-width: 1023px) {
+      @content;
+    }
+  } @else if $breakpoint == 'xl' {
+    @media (max-width: 1365px) {
+      @content;
+    }
+  } @else if $breakpoint == 'xxl' {
+    @media (max-width: 1919px) {
+      @content;
+    }
+  } @else if $breakpoint == 'xxxl' {
+    @content;
+  }
+}
+
+@mixin default-content-padding {
+  padding: 20px;
+}
+@mixin default-content-padding-sm {
+  padding: 10px 5px;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-shadow($values...) {
+  -webkit-box-shadow: $values;
+  -moz-box-shadow: $values;
+  -ms-box-shadow: $values;
+  box-shadow: $values;
+}
+
+@mixin animation($what: all, $time: 0.3s, $how: ease-in-out) {
+  -webkit-animation: $what $time $how;
+  -moz-animation: $what $time $how;
+  -ms-animation: $what $time $how;
+  animation: $what $time $how;
+}
+
+@mixin blur($blur: 0.75px) {
+  -webkit-filter: blur($blur);
+  -moz-filter: blur($blur);
+  -o-filter: blur($blur);
+  -ms-filter: blur($blur);
+  filter: blur($blur);
+}
+
+@mixin transition($what: all, $time: 0.3s, $how: ease-in-out) {
+  -webkit-transition: $what $time $how;
+  -moz-transition: $what $time $how;
+  -ms-transition: $what $time $how;
+  transition: $what $time $how;
+}
+
+@mixin transform($transforms) {
+  -webkit-transform: $transforms;
+  -moz-transform: $transforms;
+  -ms-transform: $transforms;
+  transform: $transforms;
+}
+
+@mixin noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin align-items($align) {
+  -webkit-align-items: $align;
+  -moz-align-items: $align;
+  -ms-align-items: $align;
+  align-items: $align;
+}
+
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+  -moz-justify-content: $justify;
+  -ms-justify-content: $justify;
+  justify-content: $justify;
+  -ms-flex-pack: $justify;
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+@mixin rotate($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+@mixin translate($x, $y) {
+  @include transform(translate($x, $y));
+}
+
+@mixin delay($delay) {
+  @for $i from 1 to 5 {
+    &:nth-child(#{$i}) {
+      animation-delay: ($delay + $i * 0.25) + s;
+    }
+  }
+}
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+@include keyframes(slideInRight) {
+  0% {
+    opacity: 0;
+    @include transform(translate(-100px, 0));
+  }
+  100% {
+    opacity: 1;
+    @include transform(translate(0, 0));
+  }
+}
+
+@include keyframes(rotateFadeIn) {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}

@@ -1,0 +1,44 @@
+.ms-CommandBar,
+.toolbar-searchbox {
+  .ms-SearchBox {
+    width: 208px;
+    max-width: 208px;
+    background-color: #ffffff;
+    color: #333333;
+    height: 40px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-color: transparent;
+    cursor: pointer;
+
+    &.fullwidth {
+      width: 100%;
+      max-width: unset;
+    }
+
+    &:before {
+      position: absolute;
+      content: ' ';
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: 0 8px;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    &:hover {
+      color: #0078d4;
+      border: none;
+    }
+
+    .ms-SearchBox-field {
+      cursor: inherit;
+    }
+
+    .ms-SearchBox-iconContainer {
+      color: inherit !important;
+      cursor: inherit;
+    }
+  }
+}

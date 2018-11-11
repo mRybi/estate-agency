@@ -1,3 +1,4 @@
-import { Home } from './home'
+import Home from './home'
+import  HomeAppHeader from './homeHeader'
 
-export default Home
+export { Home, HomeAppHeader} 
