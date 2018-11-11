@@ -31,7 +31,7 @@ class Nav extends React.Component<Props,State> {
   public render() {
     return (
       <div>
-        {/* <DefaultButton style={appIconColor} className="btn-back" primary={true} iconProps={{ iconName: 'Back' }} /> */}
+        
         <CommandBar
           items={this.getItems()}
           ariaLabel={'Use left and right arrow keys to navigate between commands'}
@@ -49,7 +49,7 @@ class Nav extends React.Component<Props,State> {
         iconProps: {
           iconName: 'CityNext' // DecisionSolid
         },
-        onClick: () => this.props.history.push('/home')
+        onClick: () => this.props.history.push('/home'),
       },
       {
         key: 'houses',
