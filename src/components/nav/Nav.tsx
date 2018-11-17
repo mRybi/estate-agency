@@ -62,7 +62,7 @@ class Nav extends React.Component<Props,State> {
       {
         key: 'flats',
         name: 'Flats',
-        iconProps: {
+        iconProps: { 
           iconName: 'Hotel'
         },
         onClick: () => this.props.history.push('/flats')

@@ -1,0 +1,11 @@
+C:\Users\Miki\Desktop\estateAgency\estate-agency\es-agency-api\es-agency-api\obj\Debug\netcoreapp2.0\es-agency-api.csprojAssemblyReference.cache
+C:\Users\Miki\Desktop\estateAgency\estate-agency\es-agency-api\es-agency-api\obj\Debug\netcoreapp2.0\es-agency-api.csproj.CoreCompileInputs.cache
+C:\Users\Miki\Desktop\estateAgency\estate-agency\es-agency-api\es-agency-api\obj\Debug\netcoreapp2.0\es-agency-api.AssemblyInfoInputs.cache
+C:\Users\Miki\Desktop\estateAgency\estate-agency\es-agency-api\es-agency-api\obj\Debug\netcoreapp2.0\es-agency-api.AssemblyInfo.cs
+C:\Users\Miki\Desktop\estateAgency\estate-agency\es-agency-api\es-agency-api\bin\Debug\netcoreapp2.0\es-agency-api.deps.json
+C:\Users\Miki\Desktop\estateAgency\estate-agency\es-agency-api\es-agency-api\bin\Debug\netcoreapp2.0\es-agency-api.runtimeconfig.json
+C:\Users\Miki\Desktop\estateAgency\estate-agency\es-agency-api\es-agency-api\bin\Debug\netcoreapp2.0\es-agency-api.runtimeconfig.dev.json
+C:\Users\Miki\Desktop\estateAgency\estate-agency\es-agency-api\es-agency-api\bin\Debug\netcoreapp2.0\es-agency-api.dll
+C:\Users\Miki\Desktop\estateAgency\estate-agency\es-agency-api\es-agency-api\bin\Debug\netcoreapp2.0\es-agency-api.pdb
+C:\Users\Miki\Desktop\estateAgency\estate-agency\es-agency-api\es-agency-api\obj\Debug\netcoreapp2.0\es-agency-api.dll
+C:\Users\Miki\Desktop\estateAgency\estate-agency\es-agency-api\es-agency-api\obj\Debug\netcoreapp2.0\es-agency-api.pdb

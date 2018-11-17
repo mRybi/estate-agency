@@ -25,6 +25,7 @@ export class Houses extends React.Component {
             <House/>
           </Row>
         </Col>
+
         <Col>
           <Row>
             <House/>
@@ -33,6 +34,7 @@ export class Houses extends React.Component {
             <House/>
           </Row>
         </Col>
+        
         <Col>
           <Row>
             <House/>
