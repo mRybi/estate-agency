@@ -1,0 +1,268 @@
+{
+    "houses": [{
+            "title": "Dom ko³o Jeziora",
+            "photoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQmYvJxGhiQmnJ3lTBddqYn4iZQ4jd5YfRceUyUb46-Jg9uzKZ",
+            "description": "Dom jest w okolicy jeziora, ma swój w³asny pomost oraz znajdujê na du¿ej parceli. Brak s¹siadów przez najbli¿sze 5 km ",
+            "location": "Jêdrzejów, Nowaka 24A",
+            "price": 100000,
+            "mesurement": "200m2",
+            "name": "Robert",
+            "surname": "Kurwald"
+        },
+        {
+            "title": "Bia³y dom",
+            "photoUrl": "https://i.wpimg.pl/O/644x429/i.wp.pl/a/f/jpeg/33880/domy-jednorodzinne-takie-budujemy-najchetniej-braas.jpeg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "location": "Dzików, Papciochiemla 13",
+            "price": 10000000,
+            "mesurement": "300m2",
+            "name": "Jan",
+            "surname": "Robal"
+        },
+        {
+            "title": "Bootcamp place",
+            "photoUrl": "https://cdn.galleries.smcloud.net/t/galleries/gf-f16k-SNpt-BZmf_domy-modulowe-wlasne-m-w-jeden-dzien-664x442.jpg",
+            "description": "Piêkny dom idealny na wakacje i urlopy wypoczynkowe, nadaje siê na miejsce na Bootcamp. Okolica jest cicha i spokojnia s¹siedztwo jest dobre.",
+            "location": "Stryczków, Lenina 7",
+            "price": 10000000,
+            "mesurement": "100m2",
+            "name": "Adam",
+            "surname": "Z³odziej"
+        },
+        {
+
+            "title": "Dom w budowie",
+            "photoUrl": "https://assets.archon.pl/images/products/mee821f38e74fe/widok-1-projekt-dom-w-brunerach__289.jpg",
+            "description": "Wieczenie w budowie",
+            "location": "Warszawa, Oborna 15A",
+            "price": 250000,
+            "mesurement": "165m2",
+            "name": "Magda",
+            "surname": "£atwa"
+        },
+        {
+            "title": "Willa Prezydencka",
+            "photoUrl": "https://ocdn.eu/pulscms-transforms/1/16WktkqTURBXy82Y2I5OTQzMzFmZmU0NDJiYjFhMWZjZjQwODc2YjFjMy5qcGVnkZMCAM0B5A",
+            "description": "Straszy w nim",
+            "location": "Alfonsów, Oborna 69B",
+            "price": 450000,
+            "mesurement": "311m2",
+            "name": "Roman",
+            "surname": "Jurek"
+        },
+        {
+            "title": "Nowoczesny dom",
+            "photoUrl": "https://z500.pl/thumb/z500/galleries/project_view/25930/1521477784KPIJX_331_187_tl_normal.jpg",
+            "description": "Dom przysz³oœæ zbudowany bêdzie ko³o 2030",
+            "location": "Bumborlandia, Cicha 55",
+            "price": 100000,
+            "mesurement": "185m2",
+            "name": "Pawe³",
+            "surname": "Tshirtless"
+        },
+        {
+            "title": "Radomski Pa³ac",
+            "photoUrl": "https://ocdn.eu/pulscms-transforms/1/16WktkqTURBXy82Y2I5OTQzMzFmZmU0NDJiYjFhMWZjZjQwODc2YjFjMy5qcGVnkZMCAM0B5A",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "location": "Radom, Dzia³nia 8",
+            "price": 450000,
+            "mesurement": "211m2",
+            "name": "Rafa³",
+            "surname": "Locha"
+        },
+        {
+            "title": "Piêkne nowe budownictwo",
+            "photoUrl": "http://royal-nieruchomosci.com/wp-content/uploads/2016/08/domy.jpg",
+            "description": "Piêkne nowe budownictwo",
+            "location": "Bumborlandia, Karaczana 1",
+            "price": 30000000,
+            "mesurement": "183m2",
+            "name": "Andrzej",
+            "surname": "Jasiek"
+        }
+    ],
+    "grounds": [
+        {
+            "title": "Działka budowlana Pozezdrze",
+            "photoUrl":"https://i.st-nieruchomosci-online.pl/2cwzz5c/lokal-opole.jpg",
+            "description": "Specjalnie dla Ciebie przygotowaliśmy ofertę 37 wyjątkowych, malowniczo położonych działek budowlanych w kompleksie z prywatną plażą. Działki znajdują się w bezpośrednim sąsiedztwie Jeziora Pozezdrze, w obrębie strefy ekologicznej objętej programem Natura 2000. ",
+            "location": "Pozezdrze, Aleja Kaczyskiego 85",
+            "price": 111600,
+            "mesurement": "2232 m²",
+            "name": "Wojtek",
+            "surname": "Słaby"
+        },
+		{
+            "title": "Grunty rolne w Bęczarka",
+            "photoUrl": "https://i22.biura.pl/obiekty/8/2/6/9/8269430logo.jpg?1538739041",
+            "description": "Nowoczane mieszkania na obrzeżasz koszalina",
+            "location": "Bęczarka, Mielna 39",
+            "price": 90000,
+            "mesurement": "1000 m²",
+            "name": "Arek",
+            "surname": "Prostak"
+        },
+		{
+            "title": "Grunty rolne w Czyżowice",
+            "photoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS122jcE7k3fbYl60--mbl4BnJ1PaEdQSayXiW7eGnQgJYMtGHd",
+            "description": "Oferujemy Państwu działkę budowlaną położoną w Czyżowicach w cichym i spokojnym miejscu, blisko centrum Czyżowic. Działka ma powierzchnię 1185 m2, jest prostokątna, lekko pochyła.",
+            "location": " Czyżowice , Gdańska 1",
+            "price": 59000,
+            "mesurement": "1185 m²",
+            "name": "Thomas",
+            "surname": "Goldbaum"
+        },
+		{
+            "title": "Działka Bumborlandia",
+            "photoUrl": "http://www.posesor.com.pl/photos/ofs_83/offer_838610/7954024_738_450_0_1_1.jpg",
+            "description": "Oferujemy Państwu działkę budowlaną położoną w Czyżowicach w cichym i spokojnym miejscu, blisko centrum Czyżowic. Działka ma powierzchnię 1185 m2, jest prostokątna, lekko pochyła.",
+            "location": "Bumborlandia, Sławieński 1",
+            "price": 529000,
+            "mesurement": "211 m²",
+            "name": "Alicia",
+            "surname": "Wiśniewska"
+        },
+		{
+            "title": "Dzialka Opole",
+            "photoUrl": "http://hello.uni.opole.pl/wp-content/uploads/2015/04/orlik-1.jpg",
+            "description": "Oferujemy Państwu działkę budowlaną położoną w Czyżowicach w cichym i spokojnym miejscu, blisko centrum Czyżowic. Działka ma powierzchnię 1185 m2, jest prostokątna, lekko pochyła..",
+            "location": "Opole, Pocztowa 34",
+            "price": 1,
+            "mesurement": "9000 m²",
+            "name": "Andrzej",
+            "surname": "Jasiek"
+        },
+		{
+            "title": "DZialka w opolu",
+            "photoUrl": "http://i.imgur.com/jJMTb.png",
+            "description": "Oferujemy Państwu działkę budowlaną położoną w Czyżowicach w cichym i spokojnym miejscu, blisko centrum Czyżowic. Działka ma powierzchnię 1185 m2, jest prostokątna, lekko pochyła.",
+            "location": "Opole, Centrum 43",
+            "price": 850000,
+            "mesurement": "301 m²",
+            "name": "Mariusz",
+            "surname": "Mariusz"
+        }
+    ],
+    "shops": [
+        {
+            "title": "Lokal Uzytkowy w Opolu",
+            "photoUrl":"https://i.st-nieruchomosci-online.pl/2cwzz5c/lokal-opole.jpg",
+            "description": "Dobrze umieszczone lokal na sprzedaż",
+            "location": "Opole, Aleja Kaczyskiego 85",
+            "price": 470000,
+            "mesurement": "72 m²",
+            "name": "Wojtek",
+            "surname": "Słaby"
+        },
+		{
+            "title": "Lokal Uzytkowy w Gdynia",
+            "photoUrl": "https://img3.staticmorizon.com.pl/thumbnail/aHR0cDovL21lZGlhLm9mZXJ0eS5uZXQvaW1nL3pkamVjaWEvbW9yNDY2LzYvbW9yNDY2X2xzXzg2MDgwODNfMS5qcGc=/348/231/4/thumbnail.jpg",
+            "description": "Nowoczane mieszkania na obrzeżasz koszalina",
+            "location": "Gdynia, Mielna 39",
+            "price": 39000,
+            "mesurement": "54 m²",
+            "name": "Arek",
+            "surname": "Prostak"
+        },
+		{
+            "title": "LOkal handlowy Gdańska",
+            "photoUrl": "https://img3.staticmorizon.com.pl/thumbnail/aHR0cDovL2ltZy5tb3Jpem9uLnBsL3ZpdmFpbnZlc3QvZS92aXZhaW52ZXN0X21zX1ZJVi1NUy0xMTUwNjhfMS5qcGcjdj0xXzExNjA0MTEzMDQ=/832/468/2/mieszkanie-na-sprzedaz-warszawa-stary-zoliborz-140-m-morizon.jpg",
+            "description": "Lokal handlowo- usługowy w bardzo dobrej lokalizacji Lubawy",
+            "location": " Lubawa, Gdańska 1",
+            "price": 196800,
+            "mesurement": "39 m²",
+            "name": "Thomas",
+            "surname": "Goldbaum"
+        },
+		{
+            "title": "Lokal Handlowy Sławno",
+            "photoUrl": "https://thumbs.img-sprzedajemy.pl/1000x901c/ad/dd/6f/mieszkanie-na-sprzedaz-rybnikboguszowice-m3-nieruchomosci-slaskie-rybnik-475938437.jpg",
+            "description": "Przedmiotem oferty jest budynek położony w ścisłym centrum Sławna składający się z czterech samodzielnych lokali użytkowych.Aktualnie dwa lokale sa cały czas użytkowane a pozostałych nie oferowano ze względu na zamiar sprzedaży nieruchomości.",
+            "location": "Sławno, Sławieński 1",
+            "price": 529000,
+            "mesurement": "211 m²",
+            "name": "Alicia",
+            "surname": "Wiśniewska"
+        },
+		{
+            "title": "Lokal uzytkowy w Szczecinie",
+            "photoUrl": "https://apollo-ireland.akamaized.net/v1/files/eyJmbiI6Inp6aGkxejdsOXpuajItQVBMIiwidyI6W3siZm4iOiJqMWozbzEzbTZiZ24xLUFQTCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.7Uo1VkvD7sy2Zx2dByWWCWP8DvAAVEhgMSWj22xGsMU/image;s=1280x1024;q=80",
+            "description": "Przeznaczony na sprzedaż lokal użytkowy położony jest na parterze z bezpośrednim wejściem z ulicy. Budynek, w którym się znajduje został świeżo ocieplony i wyremontowany. Witryna i drzwi wejściowe PCV zabezpieczone roletami antywłamaniowymi, ciepła woda miejska, ogrzewanie elektryczne (nowe energooszczędne grzejniki oraz taryfa nocna na prąd – cała doba).",
+            "location": "Szczecin, Pocztowa 34",
+            "price": 600000,
+            "mesurement": "92 m²",
+            "name": "Andrzej",
+            "surname": "Jasiek"
+        },
+		{
+            "title": "LOkal biuowy w Szczecinie",
+            "photoUrl": "https://apollo-ireland.akamaized.net/v1/files/eyJmbiI6IjN5a2g0ZHhvNHVtcjMtQVBMIiwidyI6W3siZm4iOiJqMWozbzEzbTZiZ24xLUFQTCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.TFDRkwH__Vui0O-5_h_AQTf8rOwO4IAe5Q9OUwX-dTY/image;s=1280x1024;q=80",
+            "description": "Na sprzedaż lokal użytkowy składający się z 2 poziomów o łącznej powierzchni 301 m1 położony na parterze odrestaurowanej kamienicy. Świeżo po remoncie. Miejsce świetnie skomunikowane, bardzo dobrze rozpoznawalne. Idealnie nadające się na gabinety lekarskie, restaurację lub inne usługi.",
+            "location": "Szczecin, Centrum 43",
+            "price": 850000,
+            "mesurement": "301 m²",
+            "name": "Mariusz",
+            "surname": "Mariusz"
+        }
+    ],
+    "flats": [{
+        "title": "Mieszkanie babci",
+        "photoUrl":"https://thumbs.img-sprzedajemy.pl/1000x901c/88/f2/eb/2-pokojowe-mieszkanie-na-sprzedaz-giermkow-47m2-elblag-475564380.jpg",
+        "description": "Super mieszkanie po babci bardzo danie do kupa w centrum warszawy, z szafy wydobywa się przyry zapach",
+        "location": "Warszawa, Aleja Kaczyskiego 85",
+        "price": 250000,
+        "mesurement": "35 m²",
+        "name": "Wojtek",
+        "surname": "Słaby"
+    },
+    {
+        "title": "Nowoczesne mieszkanie",
+        "photoUrl": "https://apollo-ireland.akamaized.net/v1/files/eyJmbiI6Ijk3ejE1YzZlbHd2YzMtQVBMIiwidyI6W3siZm4iOiJqMWozbzEzbTZiZ24xLUFQTCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.IHbk90FKxXDSg-dN9vK2gHXv_hC5zTP5-iDPxzuFadE/image;s=1280x1024;q=80",
+        "description": "Nowoczane mieszkania na obrzeżasz koszalina",
+        "location": "Koszalin, Mielna 39",
+        "price": 500000,
+        "mesurement": "63 m²",
+        "name": "Arek",
+        "surname": "Prostak"
+    },
+    {
+        "title": "Mieszkanie na Zoliborzu",
+        "photoUrl": "https://img3.staticmorizon.com.pl/thumbnail/aHR0cDovL2ltZy5tb3Jpem9uLnBsL3ZpdmFpbnZlc3QvZS92aXZhaW52ZXN0X21zX1ZJVi1NUy0xMTUwNjhfMS5qcGcjdj0xXzExNjA0MTEzMDQ=/832/468/2/mieszkanie-na-sprzedaz-warszawa-stary-zoliborz-140-m-morizon.jpg",
+        "description": "Apartament na starym zoliborzu pięknie wykończony",
+        "location": "Warszawa, Stary Zoliborz 1",
+        "price": 2200000,
+        "mesurement": "140 m²",
+        "name": "Thomas",
+        "surname": "Goldbaum"
+    },
+    {
+        "title": "Mieszkanie Rybnik Boguszowice",
+        "photoUrl": "https://thumbs.img-sprzedajemy.pl/1000x901c/ad/dd/6f/mieszkanie-na-sprzedaz-rybnikboguszowice-m3-nieruchomosci-slaskie-rybnik-475938437.jpg",
+        "description": "Mieszkanie usytuowane jest w bardzo dobrej lokalizacji ,sklepy.przedszkole.szkoła,basen kryty,poczta, przystanek autobusowy.",
+        "location": "Rybnik Boguszowice, Karaczana 1",
+        "price": 138000,
+        "mesurement": "53 m²",
+        "name": "Alicia",
+        "surname": "Wiśniewska"
+    },
+    {
+        "title": "Mieszkanie w Sosnowiecu",
+        "photoUrl": "https://cdn.nowiny.pl/im/v1/news-900-widen-wm/2011/12/02/79583.jpg",
+        "description": "najlepsze cena za mieszkania w sosnowscu zanajduje się w centrum blisko szkół i cmentarza",
+        "location": "Sosnowiec, Centrum 2",
+        "price": 50000,
+        "mesurement": "77 m²",
+        "name": "Andrzej",
+        "surname": "Jasiek"
+    },
+    {
+        "title": "Radomski Apartament",
+        "photoUrl": "https://www.wozniak-nieruchomosci.pl/photos/ofs_50/offer_5059468/86023713_411_290_0_1_1.jpg",
+        "description": "Mieszkanie usytuowane jest w bardzo dobrej lokalizacji ,sklepy.przedszkole.szkoła,basen kryty,poczta, przystanek autobusowy.",
+        "location": "Radom, Prosta 43",
+        "price": 3000000,
+        "mesurement": "101 m²",
+        "name": "Mariusz",
+        "surname": "Mariusz"
+    }]
+}

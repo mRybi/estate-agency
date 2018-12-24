@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { DocumentCard, DocumentCardPreview, DocumentCardTitle, DocumentCardActivity, IDocumentCardPreviewProps, ImageFit, Panel, PanelType } from '../../../node_modules/office-ui-fabric-react';
-import { HouseDto } from './houseDto';
+import { GroundDto } from './groundDto';
 
 
 
@@ -9,10 +9,10 @@ class State {
 }
 
 class Props {
-  house: HouseDto
+  ground: GroundDto
 }
 
-export class House extends React.Component<Props,State> {
+export class Ground extends React.Component<Props,State> {
   
   constructor(props: Props) {
     super(props);
@@ -25,11 +25,11 @@ export class House extends React.Component<Props,State> {
     const previewProps: IDocumentCardPreviewProps = {
         previewImages: [
           {
-            name: this.props.house.location,
+            name: this.props.ground.location,
             linkProps: {
-              href: this.props.house.photoUrl
+              href: this.props.ground.photoUrl
             },
-            previewImageSrc: this.props.house.photoUrl,
+            previewImageSrc: this.props.ground.photoUrl,
             iconSrc: 'https://www.google.pl/imgres?imgurl=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FCuBRiuJW8AA2Esr.jpg&imgrefurl=https%3A%2F%2Ftwitter.com%2Fasjdu3o21021&docid=NyUGGI9lH5WgzM&tbnid=wgRy9syF5zaaQM%3A&vet=10ahUKEwjwrtjhncreAhXDfywKHUlFDucQMwhCKAMwAw..i&w=1200&h=675&hl=pl&bih=661&biw=1366&q=sdadas&ved=0ahUKEwjwrtjhncreAhXDfywKHUlFDucQMwhCKAMwAw&iact=mrc&uact=8',
             imageFit: ImageFit.cover,
             width: 318,
@@ -42,26 +42,26 @@ export class House extends React.Component<Props,State> {
           <DocumentCard onClick={() => this.setState({showPanel: true}) }  onClickHref="http://bing.com">
               <DocumentCardPreview {...previewProps} />
               <DocumentCardTitle
-              title= {this.props.house.title}
+              title= {this.props.ground.title}
               shouldTruncate={true}
               />
               <DocumentCardActivity
               activity="Created a few minutes ago"
-              people={[{ name: this.props.house.name + ' ' + this.props.house.surname, profileImageSrc: 'https://www.google.pl/imgres?imgurl=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FCuBRiuJW8AA2Esr.jpg&imgrefurl=https%3A%2F%2Ftwitter.com%2Fasjdu3o21021&docid=NyUGGI9lH5WgzM&tbnid=wgRy9syF5zaaQM%3A&vet=10ahUKEwjwrtjhncreAhXDfywKHUlFDucQMwhCKAMwAw..i&w=1200&h=675&hl=pl&bih=661&biw=1366&q=sdadas&ved=0ahUKEwjwrtjhncreAhXDfywKHUlFDucQMwhCKAMwAw&iact=mrc&uact=8' }]}
+              people={[{ name: this.props.ground.name + ' ' + this.props.ground.surname, profileImageSrc: 'https://www.google.pl/imgres?imgurl=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FCuBRiuJW8AA2Esr.jpg&imgrefurl=https%3A%2F%2Ftwitter.com%2Fasjdu3o21021&docid=NyUGGI9lH5WgzM&tbnid=wgRy9syF5zaaQM%3A&vet=10ahUKEwjwrtjhncreAhXDfywKHUlFDucQMwhCKAMwAw..i&w=1200&h=675&hl=pl&bih=661&biw=1366&q=sdadas&ved=0ahUKEwjwrtjhncreAhXDfywKHUlFDucQMwhCKAMwAw&iact=mrc&uact=8' }]}
               />
           </DocumentCard>
           <Panel isOpen={this.state.showPanel} 
           onDismiss={() => this.setState({ showPanel: false })}
           type={PanelType.large}
-          headerText= {this.props.house.title}
+          headerText= {this.props.ground.title}
           >
-            <img src={this.props.house.photoUrl} alt="photo"/>
+            <img src={this.props.ground.photoUrl} alt="photo"/>
             
-            <h2>{this.props.house.description}</h2>
-            <h2>Cena: {this.props.house.price} $</h2>
-            <h2>Lokacja: {this.props.house.location}</h2>
-            <h2>Powierzchnia: {this.props.house.mesurement}</h2>
-            <h2>Sprzedajacy: {this.props.house.name} {this.props.house.surname}</h2>
+            <h2>{this.props.ground.description}</h2>
+            <h2>Cena: {this.props.ground.price} $</h2>
+            <h2>Lokacja: {this.props.ground.location}</h2>
+            <h2>Powierzchnia: {this.props.ground.mesurement}</h2>
+            <h2>Sprzedajacy: {this.props.ground.name} {this.props.ground.surname}</h2>
           </Panel>
       </div>  
 

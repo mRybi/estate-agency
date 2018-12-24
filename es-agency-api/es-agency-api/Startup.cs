@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using es_agency_api.Domain;
+using es_agency_api.helpers;
+using es_agency_api.Services;
+using es_agency_api.Services.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -27,11 +31,18 @@ namespace es_agency_api
         {
             var dbConn = Configuration.GetValue<string>("DB_CONN") ?? "Default";
 
-            services.AddDbContext<EstateAgencyDbContext>(options =>
-               options.UseSqlServer(Configuration.GetConnectionString(dbConn)));
+            //services.AddDbContext<EstateAgencyDbContext>(options =>
+            //   options.UseSqlServer(Configuration.GetConnectionString(dbConn)));
 
+            services.AddDbContext<EstateAgencyDbContext>(options =>
+               options.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Database=EstateAgency;Trusted_Connection=True;MultipleActiveResultSets=true"));
+
+            services.AddSingleton<IMapper>(new Mapper(new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfiles>())));
+            services.AddScoped<IAuctionItem, AuctionItemService>();
             services.AddMvc();
-            
+
+            services.AddCors();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +53,7 @@ namespace es_agency_api
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials());
             app.UseMvc();
         }
     }

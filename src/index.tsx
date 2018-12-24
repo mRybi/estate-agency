@@ -23,7 +23,7 @@ ReactDOM.render(
           <AllApps />
         </Apps>
       </BrowserRouter>
-    </Provider>,
+    </Provider>
   </Fabric>,
   
   document.getElementById('root') as HTMLElement
