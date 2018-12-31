@@ -2,13 +2,12 @@ import * as React from 'react';
 
 import { Switch, Route, Redirect } from 'react-router';
 
-import {App404} from './apps/app404'
-import {Home} from './apps/home';
+import { App404 } from './apps/app404';
+import { Home } from './apps/home';
 import Houses from './apps/houses';
 import Flats from './apps/flats';
 import Grounds from './apps/grounds';
 import Shops from './apps/shops';
-
 
 export default class AllApps extends React.Component {
   render() {

@@ -8,12 +8,11 @@ namespace es_agency_api.Services.Interfaces
 {
     public interface IUser
     {
-        Task Add(User user);
-        Task Delete(int id);
+        void Add<T>(T entity) where T : class;
+        void Delete<T>(T entity) where T : class;
         Task<IEnumerable<User>> GetAllUsers();
         Task<User> GetUser(int id);
         Task Update(User user);
-        Task<string> Login(string email, string password);
-        Task<string> Register(User user);
+        Task<bool> SaveAll();
     }
 }

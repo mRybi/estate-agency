@@ -1,40 +1,38 @@
 import * as React from 'react';
-import { Grid } from 'src/components/Grid';
-import Col from 'src/components/Grid/Col';
-import Row from 'src/components/Grid/Row';
-import { Shop } from 'src/components/Shop/shop';
-import { ShopDto } from 'src/components/Shop/shopDto';
+import { Grid, Col, Row } from '../../components/Grid';
+import { ShopDto } from '../../components/shop/shopDto';
+import { Shop } from '../../components/shop/shop';
+import { AuctionItemDto, AuctionItemType } from '../../dtos/auctionItem';
+import axios, { AxiosResponse } from 'axios';
 
 class State {
-  shops: ShopDto[];
+  shops: AuctionItemDto[];
 }
 
-export class Shops extends React.Component<{},State> {
+export class Shops extends React.Component<{}, State> {
   constructor(props: {}) {
     super(props);
     this.state = { 
-      shops: []
+      shops: null
     };
   }
 
-  componentWillMount() {
-    var customData  = require('../../mock.json');
-    var shopsDto: ShopDto[] = customData.shops;
-
-    this.setState({
-      shops: shopsDto
-    })
-  }
-
   componentDidMount() {
-    var customData  = require('../../mock.json');
-    var shopsDto: ShopDto[] = customData.shops;
-
-    this.setState({
-      shops: shopsDto
-    })
+    axios.get('http://localhost:54815/api/users/1/auctionItem')
+      .then( (res: AxiosResponse<AuctionItemDto[]>) => {
+        let filterdResponse: AuctionItemDto[] = res.data.filter(x => x.auctionType === AuctionItemType.Shop);
+        this.setState({
+          shops: filterdResponse
+        });
+      })
+      .catch( err => {
+        console.log(err);
+      });
   }
+
   public render() {
+    if (this.state.shops === null) return null;
+
     return (
       <Grid>
       <Col>

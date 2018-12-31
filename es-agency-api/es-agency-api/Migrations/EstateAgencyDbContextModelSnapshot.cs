@@ -44,7 +44,7 @@ namespace esagencyapi.Migrations
                     b.HasIndex("AuctionItemId")
                         .IsUnique();
 
-                    b.ToTable("Projects");
+                    b.ToTable("Auctions");
                 });
 
             modelBuilder.Entity("es_agency_api.Domain.AuctionItem", b =>
@@ -56,9 +56,15 @@ namespace esagencyapi.Migrations
 
                     b.Property<string>("Description");
 
+                    b.Property<string>("Location");
+
                     b.Property<double>("Measurement");
 
                     b.Property<string>("PhotoUrl");
+
+                    b.Property<string>("Title");
+
+                    b.Property<int>("UserId");
 
                     b.HasKey("Id");
 
@@ -92,9 +98,13 @@ namespace esagencyapi.Migrations
 
                     b.Property<string>("Name");
 
-                    b.Property<string>("Password");
+                    b.Property<byte[]>("PasswordHash");
+
+                    b.Property<byte[]>("PasswordSalt");
 
                     b.Property<string>("Surename");
+
+                    b.Property<string>("Username");
 
                     b.HasKey("Id");
 

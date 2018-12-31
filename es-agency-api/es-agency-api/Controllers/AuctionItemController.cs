@@ -3,15 +3,18 @@ using es_agency_api.Domain;
 using es_agency_api.Dtos;
 using es_agency_api.Services;
 using es_agency_api.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace es_agency_api.Controllers
 {
-    [Route("api/[controller]")]
+    //[Authorize]
+    [Route("api/users/{userId}/[controller]")]
     public class AuctionItemController : Controller
     {
         private readonly IAuctionItem _auctionItemService;
@@ -24,8 +27,11 @@ namespace es_agency_api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll(int userId)
         {
+            // if(userId != int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)))
+            //     Console.WriteLine(userId+" "+ User.FindFirst(ClaimTypes.NameIdentifier).Value);
+
             var auctions = await _auctionItemService.GetAllAuctionItems();
 
             if (auctions != null)

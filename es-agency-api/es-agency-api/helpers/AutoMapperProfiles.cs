@@ -14,8 +14,16 @@ namespace es_agency_api.helpers
         {
             CreateMap<Auction, AuctionDto>();
             CreateMap<AuctionDto, Auction>();
+
             CreateMap<AuctionItem, AuctionItemDto>();
             CreateMap<AuctionItemDto, AuctionItem>();
+
+            CreateMap<User, UserToRegister>();
+            CreateMap<UserToRegister, User>();
+
+            CreateMap<User, UserToLogin>();
+            CreateMap<UserToLogin, User>();
+            
         }
     }
 }

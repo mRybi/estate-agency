@@ -1,41 +1,37 @@
 import * as React from 'react';
-import { Grid } from 'src/components/Grid';
-import Col from 'src/components/Grid/Col';
-import Row from 'src/components/Grid/Row';
-import { GroundDto } from 'src/components/ground/groundDto';
-import { Ground } from 'src/components/ground/ground';
+import { Grid, Col, Row } from '../../components/Grid';
+import { Ground } from '../../components/ground/ground';
+import axios, { AxiosResponse } from 'axios';
+import { AuctionItemDto, AuctionItemType } from '../../dtos/auctionItem';
 
 class State {
-  grounds: GroundDto[];
+  grounds: AuctionItemDto[];
 }
 
-export class Grounds extends React.Component<{},State> {
+export class Grounds extends React.Component<{}, State> {
   constructor(props: {}) {
     super(props);
     this.state = { 
-      grounds: []
+      grounds: null
     };
   }
 
-  componentWillMount() {
-    var customData  = require('../../mock.json');
-    var groundsDto: GroundDto[] = customData.grounds;
-    // console.log('price',housesDto[0].price);
-
-    this.setState({
-      grounds: groundsDto
-    })
-  }
-
   componentDidMount() {
-    var customData  = require('../../mock.json');
-    var groundsDto: GroundDto[] = customData.grounds;
-
-    this.setState({
-      grounds: groundsDto
-    })
+    axios.get('http://localhost:54815/api/users/1/auctionItem')
+      .then( (res: AxiosResponse<AuctionItemDto[]>) => {
+        let filterdResponse: AuctionItemDto[] = res.data.filter(x => x.auctionType === AuctionItemType.Ground);
+        this.setState({
+          grounds: filterdResponse
+        });
+      })
+      .catch( err => {
+        console.log(err);
+      });
   }
+
   public render() {
+    if (this.state.grounds === null) return null;
+
     return (
       <Grid>
       <Col>

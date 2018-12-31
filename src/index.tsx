@@ -4,13 +4,13 @@ import * as ReactDOM from 'react-dom';
 import './styles/main.scss';
 import registerServiceWorker from './registerServiceWorker';
 import { initializeIcons } from '@uifabric/icons';
-import AllApps from 'src/allApps';
+import AllApps from './allApps';
 import Apps from './components/platform/Apps';
 import { BrowserRouter } from 'react-router-dom';
 import Nav from './components/nav/Nav';
 import { Fabric } from '../node_modules/office-ui-fabric-react';
-import { store } from './store'
-import { Provider } from 'react-redux'
+import { store } from './store';
+import { Provider } from 'react-redux';
 
 initializeIcons();
 

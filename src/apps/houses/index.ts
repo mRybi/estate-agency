@@ -1,3 +1,3 @@
-import { Houses } from './Houses'
+import { Houses } from './Houses';
 
-export default Houses
+export default Houses;

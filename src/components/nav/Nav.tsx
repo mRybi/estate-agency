@@ -1,33 +1,15 @@
 import * as React from 'react';
 import './Nav.css';
 import { CommandBar } from '../../../node_modules/office-ui-fabric-react';
-import { RouteComponentProps, withRouter} from 'react-router';
-import { MapStateToProps, MapDispatchToProps } from '../../services';
-import { connect } from 'react-redux';
+import { RouteComponentProps, withRouter } from 'react-router';
 
-class StateProps {
-
-}
-
-class DispatchProps {
-
-}
-class OwnProps {
-}
 class RouterProps {}
-type Props = OwnProps & StateProps & DispatchProps & RouteComponentProps<RouterProps>;
+type Props = RouteComponentProps<RouterProps>;
 class State {
 
 }
 
-class Nav extends React.Component<Props,State> {
-  static mapStateToProps: MapStateToProps<StateProps> = state => ({
-  });
-
-  static mapDispatchProps: MapDispatchToProps<DispatchProps> = dispatch => ({
-   
-  });
-
+class Nav extends React.Component<Props, State> {
   public render() {
     return (
       <div>
@@ -87,9 +69,4 @@ class Nav extends React.Component<Props,State> {
   };
 }
 
-export default withRouter(
-  connect<StateProps, DispatchProps>(
-    Nav.mapStateToProps,
-    Nav.mapDispatchProps
-  )(Nav)
-);
+export default withRouter(Nav);

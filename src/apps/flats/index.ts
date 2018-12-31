@@ -1,3 +1,3 @@
-import { Flats } from './Flats'
+import Flats from './Flats';
 
-export default Flats
+export default Flats;

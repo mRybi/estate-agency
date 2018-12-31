@@ -13,7 +13,7 @@ namespace es_agency_api.Domain
         }
 
         public DbSet<User> Users { get; set; }
-        public DbSet<Auction> Projects { get; set; }
+        public DbSet<Auction> Auctions { get; set; }
         public DbSet<Bid> Bids { get; set; }
         public DbSet<AuctionItem> AuctionItems { get; set; }
     }

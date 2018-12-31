@@ -8,7 +8,12 @@ namespace es_agency_api.Domain
     public class AuctionItem
     {
         public int Id { get; set; }
+        public int UserId { get; set; }
+
         public string Description { get; set; }
+        public string Title { get; set; }
+        public string Location { get; set; }
+
         public AuctionItemType AuctionType { get; set; }
         public string PhotoUrl { get; set; }
         public double Measurement { get; set; }

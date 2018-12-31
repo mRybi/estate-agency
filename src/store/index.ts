@@ -1,13 +1,11 @@
 import { Location } from 'history';
 import createHistory from 'history/createBrowserHistory';
 import { routerReducer, routerMiddleware } from 'react-router-redux';
-
-import { applyMiddleware, createStore, combineReducers } from '../../node_modules/redux';
-
+import { applyMiddleware, createStore, combineReducers, Reducer } from 'redux';
+import { Logger } from '../common/loggerMiddleware';
 
 export class RootState {
   location: Location;
-  type: any
 }
 
 export const applicationHistory = createHistory();
@@ -17,4 +15,4 @@ const rootReducer = combineReducers({
   router: routerReducer,
 });
 
-export const store = createStore(rootReducer, applyMiddleware(historyRouterMiddleware));
+export const store = createStore(rootReducer, applyMiddleware(Logger, historyRouterMiddleware));

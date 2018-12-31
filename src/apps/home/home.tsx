@@ -1,4 +1,4 @@
-import { Label } from 'office-ui-fabric-react/lib/Label'
+import { Label } from 'office-ui-fabric-react/lib/Label';
 import * as React from 'react';
 
 class Home extends React.Component {
