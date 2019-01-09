@@ -8,6 +8,8 @@ import Houses from './apps/houses';
 import Flats from './apps/flats';
 import Grounds from './apps/grounds';
 import Shops from './apps/shops';
+import { Login } from './apps/login';
+import { Register } from './apps/register';
 
 export default class AllApps extends React.Component {
   render() {
@@ -15,6 +17,8 @@ export default class AllApps extends React.Component {
       <Switch>
         <Redirect exact={true} from="/" to="/home" />
         <Route path="/home" component={Home} />
+        <Route path="/login" component={Login} />
+        <Route path="/register" component={Register} />
         <Route path="/houses" component={Houses} />
         <Route path="/flats" component={Flats} />
         <Route path="/grounds" component={Grounds} />
